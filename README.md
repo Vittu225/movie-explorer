@@ -15,8 +15,8 @@
 *   **Адаптивный дизайн:** Корректное отображение на мобильных устройствах и десктопах.
 
 ## 🛠 Установка и запуск (для локальной разработки)
-1) Клонируйте репозиторий: git clone https://github.com
-2) Установите все необходимые зависимости: npm install
-3) Создайте в корне проекта файл .env.local и добавьте туда ваш API ключ: NEXT_PUBLIC_KP_API_KEY=ваш_ключ_от_кинопоиска
-NEXT_PUBLIC_KP_BASE_URL=https://kinopoiskapiunofficial.tech
-4) Запустите проект: npm run dev
+1) Клонируйте репозиторий: `git clone https://github.com`
+2) Установите все необходимые зависимости: `npm install`
+3) Создайте в корне проекта файл .env.local и добавьте туда ваш API ключ: `NEXT_PUBLIC_KP_API_KEY=ваш_ключ_от_кинопоиска`
+`NEXT_PUBLIC_KP_BASE_URL=https://kinopoiskapiunofficial.tech`
+4) Запустите проект: `npm run dev`
