@@ -1,0 +1,88 @@
+.heroCard {
+    display: flex;
+    flex-direction: row; /* Текст будет справа от картинки */
+    gap: 30px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    min-height: 500px;
+  }
+  
+  .heroPosterWrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px; /* Фиксированная ширина постера */
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  
+  .heroPoster {
+    object-fit: cover;
+  }
+  
+  .heroBody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .heroSub {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  
+  .heroDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    max-width: 800px;
+  }
+  
+  .rating {
+    background: #10b981;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    display: inline-block; 
+    margin-top: 5px; 
+    
+  }
+  
+  .ctaButton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+  }
+  
+  /* Адаптивность для мобилок */
+  @media (max-width: 768px) {
+    .heroCard {
+      flex-direction: column;
+      padding: 15px;
+    }
+    .heroPosterWrapper {
+      width: 100%;
+      height: 400px;
+    }
+    .heroTitle {
+      font-size: 1.8rem;
+    }
+  }
