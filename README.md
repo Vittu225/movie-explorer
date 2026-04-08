@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Веб-приложение для поиска фильмов и просмотра информации о них. Построено на базе **Next.js 14 (App Router)** с использованием внешнего API Кинопоиска.
 
-## Getting Started
+## 🚀 Стек технологий
+*   **Framework:** [Next.js 14](https://nextjs.org) (App Router)
+*   **Language:** TypeScript
+*   **Styling:** CSS Modules
+*   **API:** Kinopoisk Unofficial API
+*   **Deployment:** Vercel
 
-First, run the development server:
+## ✨ Ключевые особенности
+*   **Главная страница:** Список популярных фильмов, обновляемый динамически.
+*   **Живой поиск:** Поиск фильмов по названию с реализацией паттерна **Debounce** (задержка запроса) для оптимизации нагрузки на API.
+*   **Динамические страницы:** Детальная информация о каждом фильме (описание, рейтинг, год, жанры).
+*   **Server Components:** Получение данных на стороне сервера для улучшения SEO и производительности.
+*   **Адаптивный дизайн:** Корректное отображение на мобильных устройствах и десктопах.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 Установка и запуск (для локальной разработки)
+1) Клонируйте репозиторий: git clone https://github.com
+2) Установите все необходимые зависимости: npm install
+3) Создайте в корне проекта файл .env.local и добавьте туда ваш API ключ: NEXT_PUBLIC_KP_API_KEY=ваш_ключ_от_кинопоиска
+NEXT_PUBLIC_KP_BASE_URL=https://kinopoiskapiunofficial.tech
+4) Запустите проект: npm run dev
